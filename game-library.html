@@ -225,6 +225,66 @@
         </section>
     </main>
 
+    <section id="reserve" class="container section">
+        <!-- Title and paragraph row -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="display-6 text-center">RESERVE A GAME</h2>
+            </div>
+        </div>
+
+        <!-- Reserve a game section -->
+        <div class="row justify-content-center resize">
+            <p class="my-4">Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and
+                let the adventure begin! Fill out your details and preferred game below, and we'll have it set aside
+                for you when you arrive.
+            </p>
+            <form action="success.html" method="GET">
+                <div class="row ">
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input class="form-control" id="name" name="name" type="text" required>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="phone" class="form-label">Phone number</label>
+                        <input class="form-control" id="phone" name="phone" type="number" required>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input class="form-control" id="email" name="email" type="email" required>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8 mb-3">
+                        <label for="event-type" class="form-label">Select game</label>
+                        <select id="event-type" class="form-select" name="event-type" required>
+                            <option value="" selected>Select game</option>
+                            <option value="regular-play">Galaxy Pioneers</option>
+                            <option value="dnd">Mystic Woods</option>
+                            <option value="retro-night">Captain's Gambit</option>
+                            <option value="tournament">Critter Quest</option>
+                            <option value="kids-party">Setters of Catan</option>
+                            <option value="kids-party">Monopoly</option>
+                            <option value="kids-party">Exploding Kittens</option>
+                            <option value="kids-party">Cluedo</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-3">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" class="form-control" rows="1" name="date" min="month" max="year" required />
+                    </div>
+                </div>
+
+                <div class="col-12 text-end ">
+                    <button type="submit" class="btn custom-button-outline">Submit</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
     <!-- footer / contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->
     <footer id="contact" class="mt-auto">
