@@ -19,6 +19,8 @@
 
 body {
     font-family: var(--primary-font);
+    padding-top: 57.15px;
+    /* pushes the top of the header down under fixed navbar */
 }
 
 h1,
@@ -156,29 +158,22 @@ h2 {
 
 /* Media queries */
 
-
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-
-    /* Make all service cards the same height for consistency */
-    #reserve .resize {
-        min-height: 191px;
-    }
-}
-
-/* Large devices (small laptops, 992px and up) */
+/* Small devices (320px and up) */
 @media screen and (min-width: 320px) {
-
-    /* Make all service cards the same height for consistency */
     #reserve .resize {
         min-height: auto;
     }
 }
 
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    #reserve .resize {
+        min-height: 191px;
+    }
+}
+
 /* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
-
-    /* make all service cards the same height for consistency */
     #reserve .resize {
         min-height: 220px;
     }
@@ -186,8 +181,6 @@ h2 {
 
 /* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
-
-    /* make all service cards the same height for consistency */
     #reverse .resize {
         min-height: 195px;
     }
